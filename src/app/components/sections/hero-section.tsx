@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function HeroSection() {
   return (
     <section className="mx-auto max-w-3xl space-y-10 text-center md:text-left">
@@ -19,13 +21,19 @@ export function HeroSection() {
       </div>
 
       <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-        <button className="w-full cursor-pointer rounded-full bg-[#21a67a] px-8 py-3 text-base font-semibold text-white transition-colors hover:bg-[#161a27] sm:w-auto lg:w-50">
+        <Link
+          href="/signup"
+          className="w-full cursor-pointer rounded-full bg-[#21a67a] px-8 py-3 text-center text-base font-semibold text-white transition-colors hover:bg-[#1a8a5e] sm:w-auto"
+        >
           Get started
-        </button>
+        </Link>
 
-        <button className="border-border bg-surface text-accent hover:border-accent hover:bg-surface w-full cursor-pointer rounded-full border px-8 py-3 text-base font-semibold transition-colors sm:w-auto lg:w-50">
+        <Link
+          href="#workflow"
+          className="border-border bg-surface text-accent hover:border-accent hover:bg-surface w-full cursor-pointer rounded-full border px-8 py-3 text-center text-base font-semibold transition-colors sm:w-auto"
+        >
           See how it works
-        </button>
+        </Link>
       </div>
     </section>
   )

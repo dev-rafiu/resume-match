@@ -48,13 +48,19 @@ export function Header() {
 
       <div className="flex flex-1 items-center justify-end gap-3 text-sm md:flex-initial">
         <div className="hidden gap-3 md:flex">
-          <button className="cursor-pointer rounded-full border border-border px-4 py-2 font-medium text-foreground transition-colors hover:border-foreground">
-            Request demo
-          </button>
+          <Link
+            href="/login"
+            className="cursor-pointer rounded-full border border-border px-4 py-2 font-medium text-foreground transition-colors hover:border-foreground"
+          >
+            Sign in
+          </Link>
 
-          <button className="cursor-pointer rounded-full bg-[#21a67a] px-4 py-2 font-medium text-white transition-colors hover:bg-[#161a27]">
-            Start tailoring
-          </button>
+          <Link
+            href="/signup"
+            className="cursor-pointer rounded-full bg-[#21a67a] px-4 py-2 font-medium text-white transition-colors hover:bg-[#1a8a5e]"
+          >
+            Get started
+          </Link>
         </div>
 
         {/* mobile menu */}
@@ -96,13 +102,19 @@ export function Header() {
               </Link>
 
               <div className="flex flex-col gap-3 pt-6">
-                <button className="w-full rounded-full border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-foreground">
-                  Request demo
-                </button>
+                <Link
+                  href="/login"
+                  className="w-full rounded-full border border-border px-4 py-2 text-center text-sm font-medium text-foreground transition-colors hover:border-foreground"
+                >
+                  Sign in
+                </Link>
 
-                <button className="w-full rounded-full bg-foreground px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#161a27]">
-                  Start tailoring
-                </button>
+                <Link
+                  href="/signup"
+                  className="w-full rounded-full bg-[#21a67a] px-4 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-[#1a8a5e]"
+                >
+                  Get started
+                </Link>
               </div>
             </nav>
           </SheetContent>
