@@ -17,9 +17,9 @@ export function LoginForm() {
     setIsLoading(true);
     setError(null);
 
-    const formData = new FormData(e.currentTarget);
-    const email = formData.get("email") as string;
-    const password = formData.get("password") as string;
+    // const formData = new FormData(e.currentTarget);
+    // const email = formData.get("email") as string;
+    // const password = formData.get("password") as string;
 
     try {
       // TODO: Implement actual authentication
@@ -84,7 +84,7 @@ export function LoginForm() {
       </Button>
 
       <p className="text-center text-sm text-muted">
-        Don't have an account?{" "}
+        Don&apos;t have an account?{" "}
         <Link href="/signup" className="font-semibold text-accent hover:underline">
           Sign up
         </Link>
