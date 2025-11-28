@@ -1,51 +1,32 @@
-export const featureHighlights = [
+export const features = [
   {
-    title: "Precise Matching",
-    detail: "92% average JD alignment",
+    title: "AI-Powered Analysis",
     description:
-      "Compare every sentence of a resume against role requirements and highlight gaps instantly.",
+      "Intelligent matching between your resume and job descriptions with instant gap identification.",
   },
   {
-    title: "Role Ready Suggestions",
-    detail: "Personalized recommendations",
+    title: "Tailored Recommendations",
     description:
-      "Get clear instructions on what to rewrite, what to remove, and what data points to add.",
+      "Get specific, actionable suggestions to improve your resume for each role.",
   },
   {
-    title: "Shareable Outputs",
-    detail: "PDF & doc exports",
+    title: "Export & Share",
     description:
-      "Ship tailored resumes, cover letters, and recruiter-ready summaries with one click.",
+      "Download optimized resumes in PDF or DOCX format, ready to submit.",
   },
 ] as const;
 
-export const workflowSteps = [
+export const steps = [
   {
-    title: "Upload resume & JD",
-    copy: "Drop in any PDF or DOCX plus the job description or a public link.",
-  },
-  {
-    title: "AI alignment scan",
-    copy: "ResumeMatch scores every competency, surfacing missing keywords and impact.",
+    title: "Upload",
+    description: "Upload your resume and paste the job description.",
   },
   {
-    title: "Tailor & export",
-    copy: "Streamed suggestions let you accept edits, tailor tone, and export instantly.",
+    title: "Analyze",
+    description: "AI scans and compares your resume against the job requirements.",
+  },
+  {
+    title: "Tailor",
+    description: "Review suggestions and export your optimized resume.",
   },
 ] as const;
-
-export const metrics = [
-  { label: "Tailored applications", value: "12,400+" },
-  { label: "Avg. interview rate lift", value: "3.1×" },
-  { label: "Time saved per role", value: "45 min" },
-] as const;
-
-export const industries = [
-  "Product",
-  "Design",
-  "Engineering",
-  "Marketing",
-  "Operations",
-  "Finance",
-] as const;
-

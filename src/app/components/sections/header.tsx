@@ -12,7 +12,7 @@ import {
 
 export function Header() {
   return (
-    <header className="flex flex-wrap items-center gap-4 border-b-0 border-border pb-6 md:border-b">
+    <header className="md:border-b flex flex-wrap items-center gap-4 border-b-0 border-border pb-6">
       <div className="flex items-center gap-3">
         <div className="flex size-11 items-center justify-center rounded-full bg-foreground text-sm font-semibold tracking-tight text-white">
           RM
@@ -28,12 +28,16 @@ export function Header() {
         >
           Features
         </Link>
+
+
         <Link
           href="#workflow"
           className="transition-colors hover:text-foreground"
         >
           Workflow
         </Link>
+
+        
         <Link
           href="#stories"
           className="transition-colors hover:text-foreground"
@@ -48,7 +52,7 @@ export function Header() {
             Request demo
           </button>
 
-          <button className="cursor-pointer rounded-full bg-foreground px-4 py-2 font-medium text-white transition-colors hover:bg-[#161a27]">
+          <button className="cursor-pointer rounded-full bg-[#21a67a] px-4 py-2 font-medium text-white transition-colors hover:bg-[#161a27]">
             Start tailoring
           </button>
         </div>

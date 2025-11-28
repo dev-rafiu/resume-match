@@ -1,45 +1,32 @@
-import { industries } from "@/lib/constants";
-import { Scorecard } from "./scorecard";
-
 export function HeroSection() {
   return (
-    <section className="grid gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] md:items-center">
-      <div className="space-y-8">
-        <p className="inline-flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-muted">
-          AI Tailoring Platform
+    <section className="mx-auto max-w-3xl space-y-10 text-center md:text-left">
+      <div className="space-y-6">
+        <div className="bg-surface text-muted inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold tracking-[0.2em] uppercase">
           <span className="size-2 rounded-full bg-[#21a67a]" />
+          AI-Powered Resume Tailoring
+        </div>
+
+        <h1 className="text-accent text-center text-5xl leading-[1.1] font-semibold tracking-tight sm:text-6xl md:text-7xl">
+          Tailor your resume to every job in {""}
+          <span className="text-[#21a67a]">minutes</span>
+        </h1>
+
+        <p className="text-muted mx-auto max-w-2xl text-center text-lg leading-relaxed sm:text-xl">
+          Upload your resume and job description. Get AI-powered recommendations
+          to optimize your resume for each application.
         </p>
-
-        <div className="space-y-4">
-          <h1 className="text-4xl font-semibold leading-snug tracking-tight text-accent sm:text-5xl">
-            Tailor every resume to the job in minutes, not hours.
-          </h1>
-          <p className="text-lg text-muted sm:text-xl">
-            ResumeMatch analyzes your resume, reads the job description, and
-            streams edits that align experience to the role—without recycled
-            templates or noisy gradients.
-          </p>
-        </div>
-
-        <div className="flex flex-wrap gap-4">
-          <button className="cursor-pointer rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#161a27]">
-            Create a tailored resume
-          </button>
-
-          <button className="cursor-pointer rounded-full border border-border px-6 py-3 text-sm font-semibold text-accent transition-colors hover:border-accent">
-            Watch demo (2 min)
-          </button>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-6 text-xs font-semibold uppercase tracking-[0.3em] text-muted">
-          {industries.map((industry) => (
-            <span key={industry} className="text-muted">
-              {industry}
-            </span>
-          ))}
-        </div>
       </div>
-      <Scorecard />
+
+      <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <button className="w-full cursor-pointer rounded-full bg-[#21a67a] px-8 py-3 text-base font-semibold text-white transition-colors hover:bg-[#161a27] sm:w-auto lg:w-50">
+          Get started
+        </button>
+
+        <button className="border-border bg-surface text-accent hover:border-accent hover:bg-surface w-full cursor-pointer rounded-full border px-8 py-3 text-base font-semibold transition-colors sm:w-auto lg:w-50">
+          See how it works
+        </button>
+      </div>
     </section>
-  );
+  )
 }
